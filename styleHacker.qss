@@ -1,0 +1,92 @@
+/* styleHacker.qss */
+
+/* 设置整体背景颜色为深黑色，文本颜色为绿色，模仿典型的黑客界面 */
+QWidget {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* 按钮样式：黑色背景，绿色边框和文字 */
+QPushButton {
+    background-color: #000000;
+    border: 2px solid #00FF00;
+    color: #00FF00;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    border-color: #008000;
+}
+
+QPushButton:pressed {
+    background-color: #002200;
+}
+
+/* 文本输入框样式：黑色背景，绿色边框 */
+QLineEdit {
+    background-color: #000000;
+    border: 1px solid #00FF00;
+    color: #00FF00;
+    padding: 3px;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    border: 1px solid #00FF00;
+    background: #000000;
+    width: 10px;
+    margin: 20px 0 20px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #00FF00;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: 1px solid #00FF00;
+    background: #00FF00;
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: 1px solid #00FF00;
+    background: #00FF00;
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+/* 添加其他你需要定制的控件样式... */
+
+/* QTableWidget样式：黑色背景，绿色文本和边框 */
+QTableWidget {
+    border: 2px solid #00FF00;
+    gridline-color: #00FF00;
+    background-color: #000000;
+    color: #00FF00;
+}
+
+/* 表头样式：黑色背景，绿色文本 */
+QHeaderView::section {
+    background-color: #000000;
+    color: #00FF00;
+    padding: 4px;
+    border: 1px solid #00FF00;
+    font-weight: bold;
+}
+
+/* 设置选中行的样式：暗绿色背景 */
+QTableWidget::item:selected {
+    background-color: #003300;
+}
+
+/* 设置单元格样式：黑色背景，绿色文本 */
+QTableWidgetItem {
+    background-color: #000000;
+    color: #00FF00;
+}

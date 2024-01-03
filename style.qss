@@ -1,0 +1,101 @@
+/* 设置所有窗口的背景色和字体 */
+QWidget {
+    background-color: #f0f0f0;
+    font-family: Arial, 'Times New Roman', 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+/* 设置标签的字体颜色 */
+QLabel {
+    color: #333333;
+}
+
+/* 设置文本框的样式 */
+QLineEdit {
+    border: 1px solid #CCCCCC;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* 设置文本框获得焦点时的样式 */
+QLineEdit:focus {
+    border: 1px solid #0078D7;
+}
+
+/* 设置按钮的默认样式 */
+QPushButton {
+    background-color: #0078D7;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+/* 设置按钮的悬浮效果 */
+QPushButton:hover {
+    background-color: #005EA6;
+}
+
+/* 设置按钮的按下效果 */
+QPushButton:pressed {
+    background-color: #004C99;
+}
+
+
+/* 设置滚动条的样式 */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F1F1F1;
+    width: 10px;
+    margin: 12px 0 12px 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #C1C1C1;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical {
+    border: none;
+    background-color: #C1C1C1;
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    border: none;
+    background-color: #C1C1C1;
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+/* 设置对话框的样式 */
+QDialog {
+    background-color: #FFFFFF;
+}
+
+/* 设置对话框中的按钮样式 */
+QDialog QPushButton {
+    /* 您可以为对话框中的按钮设置特别的样式 */
+}
+
+/* 设置选项卡的样式 */
+QTabWidget::pane {
+    border: 1px solid #CCCCCC;
+}
+
+QTabBar::tab {
+    background: #F0F0F0;
+    padding: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #E0E0E0;
+}
+
+
+
