@@ -62,7 +62,7 @@ class RegisterWindow(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.resize(200,150)
+        self.resize(300,200)
         self.setWindowTitle('SecurityChat - 注册')
         self.setWindowIcon(QIcon('img/app_icon.png'))
         self.layout = QVBoxLayout(self)
@@ -103,14 +103,11 @@ class RegisterWindow(QWidget):
             QMessageBox.warning(self, 'Error', 'Passwords do not match.')
             return
 
-        # Here we should call the user registration logic
-        # For demonstration, this part is simplified
-        # You need to integrate the actual user registration logic here
         success = self.user_manager.register_user(username, password)  # Simplified
         if success:
-            QMessageBox.information(self, 'Success', 'Registration successful.')
+            QMessageBox.information(self, 'Success', '注册成功！')
             self.close()
         else:
-            QMessageBox.warning(self, 'Error', 'Registration failed. User might already exist.')
+            QMessageBox.warning(self, 'Error', '注册失败，用户名已存在。')
 
 

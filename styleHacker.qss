@@ -61,8 +61,6 @@ QScrollBar::sub-line:vertical {
     subcontrol-origin: margin;
 }
 
-/* 添加其他你需要定制的控件样式... */
-
 /* QTableWidget样式：黑色背景，绿色文本和边框 */
 QTableWidget {
     border: 2px solid #00FF00;
